@@ -4,7 +4,8 @@ Vue.use(Router)
 Vue.use(require('vue-wechat-title'))
 
 const Index = resolve => require(['@/view/index'], resolve)
-const Introduce = resolve => require(['@/components/Index/introduce'], resolve)
+const Company = resolve => require(['@/view/intro/company'], resolve)
+const Shareholders = resolve => require(['@/view/intro/shareholders'], resolve)
 
 export default new Router({
   // mode: 'history',
@@ -15,9 +16,14 @@ export default new Router({
       component: Index,
       children: [
         {
-          path: 'intro',
-          name: 'Introduce',
-          component: Introduce
+          path: 'company',
+          name: 'Company',
+          component: Company
+        },
+        {
+          path: 'shareholders',
+          name: 'Shareholders',
+          component: Shareholders
         }
       ]
     }

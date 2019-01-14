@@ -111,145 +111,6 @@
       height: fit-content;
       padding: 20px 0;
       background: #fff;
-      ul {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        li {
-          width: 100%;
-          list-style: none;
-          text-align: center;
-          .list_title {
-            color: #333;
-            font-size: 16px;
-            height: 50px;
-            line-height: 50px;
-            .icon_aboutUs {
-              background-image: url("../assets/images/aboutUs.png");
-            }
-            .icon_business {
-              background-image: url("../assets/images/business.png");
-            }
-            .icon_operate {
-              background-image: url("../assets/images/operate.png");
-            }
-            .icon_safe {
-              background-image: url("../assets/images/safe.png");
-            }
-            .icon_law {
-              background-image: url("../assets/images/law.png");
-            }
-            .icon_platform {
-              background-image: url("../assets/images/platform.png");
-            }
-            span {
-              margin: 0 10px;
-              cursor: pointer;
-              vertical-align: middle;
-            }
-            .icon {
-              width: 16px;
-              height: 16px;
-              background-size: 100% 100%;
-              display: inline-block;
-              vertical-align: middle;
-            }
-            .icon_more {
-              width: 12px;
-              height: 12px;
-              background-image: url("../assets/images/right.png");
-              background-size: 100% 100%;
-              display: inline-block;
-              vertical-align: middle;
-            }
-          }
-          .list_title.on {
-            color: #f85347;
-            .icon_aboutUs {
-              background-image: url("../assets/images/aboutUs_index.png");
-            }
-            .icon_more {
-              background-image: url("../assets/images/down.png");
-            }
-          }
-          &.on > .li_item {
-            display: block;
-          }
-          &.on > .li_item .index {
-            color: #fff;
-            background: #f85347;
-            &:after {
-              content: none;
-            }
-          }
-          &.on > .list_title {
-            color: #f85347;
-            .icon_aboutUs {
-              background-image: url("../assets/images/aboutUs_index.png");
-            }
-            .icon_more {
-              background-image: url("../assets/images/down.png");
-            }
-          }
-          .li_item {
-            display: none;
-            width: 100%;
-            li {
-              color: #666;
-              font-size: 14px;
-              width: 100%;
-              height: 36px;
-              line-height: 36px;
-              cursor: pointer;
-              text-align: center;
-              position: relative;
-              &:after {
-                content: "";
-                height: 1px;
-                background: #eee;
-                position: absolute;
-                left: 20px;
-                right: 20px;
-                bottom: 0;
-              }
-              &:hover {
-                color: #fff;
-                background: #f85347;
-                &:after {
-                  content: none;
-                }
-              }
-            }
-          }
-          &:hover > .li_item {
-            display: block;
-          }
-          &:hover > .list_title {
-            color: #f85347;
-            .icon_aboutUs {
-              background-image: url("../assets/images/aboutUs_index.png");
-            }
-            .icon_business {
-              background-image: url("../assets/images/business_index.png");
-            }
-            .icon_operate {
-              background-image: url("../assets/images/operate_index.png");
-            }
-            .icon_safe {
-              background-image: url("../assets/images/safe_index.png");
-            }
-            .icon_law {
-              background-image: url("../assets/images/law_index.png");
-            }
-            .icon_platform {
-              background-image: url("../assets/images/platform_index.png");
-            }
-            .icon_more {
-              background-image: url("../assets/images/down.png");
-            }
-          }
-        }
-      }
     }
     .cont_righ{
       width: 970px;
@@ -382,10 +243,10 @@
         </div>
         <div class="nav">
           <ul>
-            <li class="on">首页</li>
+            <li>首页</li>
             <li>投资专区</li>
             <li>我要借款</li>
-            <li>信息披露</li>
+            <li class="on">信息披露</li>
           </ul>
         </div>
         <div class="account">
@@ -396,80 +257,7 @@
     </div>
     <div class="container">
       <div class="cont_left">
-        <ul>
-          <li class="on">
-            <div class="list_title">
-              <i class="icon icon_aboutUs"></i><span>关于我们</span><i class="icon_more"></i>
-            </div>
-            <ul class="li_item">
-              <li class="index">公司简介</li>
-              <li>股东介绍</li>
-              <li>机构信息</li>
-              <li>团队介绍</li>
-              <li>联系我们</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list_title">
-              <i class="icon icon_business"></i><span>业务介绍</span><i class="icon_more"></i>
-            </div>
-            <ul class="li_item">
-              <li>公司简介</li>
-              <li>股东介绍</li>
-              <li>机构信息</li>
-              <li>团队介绍</li>
-              <li>联系我们</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list_title">
-              <i class="icon icon_operate"></i><span>运营分析</span><i class="icon_more"></i>
-            </div>
-            <ul class="li_item">
-              <li>公司简介</li>
-              <li>股东介绍</li>
-              <li>机构信息</li>
-              <li>团队介绍</li>
-              <li>联系我们</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list_title">
-              <i class="icon icon_safe"></i><span>合规安全</span><i class="icon_more"></i>
-            </div>
-            <ul class="li_item">
-              <li>公司简介</li>
-              <li>股东介绍</li>
-              <li>机构信息</li>
-              <li>团队介绍</li>
-              <li>联系我们</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list_title">
-              <i class="icon icon_law"></i><span>法律法规</span><i class="icon_more"></i>
-            </div>
-            <ul class="li_item">
-              <li>公司简介</li>
-              <li>股东介绍</li>
-              <li>机构信息</li>
-              <li>团队介绍</li>
-              <li>联系我们</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list_title">
-              <i class="icon icon_platform"></i><span>平台公告</span><i class="icon_more"></i>
-            </div>
-            <ul class="li_item">
-              <li>公司简介</li>
-              <li>股东介绍</li>
-              <li>机构信息</li>
-              <li>团队介绍</li>
-              <li>联系我们</li>
-            </ul>
-          </li>
-        </ul>
+        <Navs />
       </div>
       <div class="cont_righ">
         <router-view />
@@ -544,7 +332,11 @@
 </template>
 
 <script>
+import Navs from '@/components/nav/index'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Navs
+  }
 }
 </script>
