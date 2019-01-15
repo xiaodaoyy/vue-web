@@ -13,22 +13,22 @@ ul {
       height: 50px;
       line-height: 50px;
       .icon_aboutUs {
-        background-image: url("../../assets/images/aboutUs.png");
+        background-image: url("../../assets/images/nav/aboutUs.png");
       }
       .icon_business {
-        background-image: url("../../assets/images/business.png");
+        background-image: url("../../assets/images/nav/business.png");
       }
       .icon_operate {
-        background-image: url("../../assets/images/operate.png");
+        background-image: url("../../assets/images/nav/operate.png");
       }
       .icon_safe {
-        background-image: url("../../assets/images/safe.png");
+        background-image: url("../../assets/images/nav/safe.png");
       }
       .icon_law {
-        background-image: url("../../assets/images/law.png");
+        background-image: url("../../assets/images/nav/law.png");
       }
       .icon_platform {
-        background-image: url("../../assets/images/platform.png");
+        background-image: url("../../assets/images/nav/platform.png");
       }
       span {
         margin: 0 10px;
@@ -45,7 +45,7 @@ ul {
       .icon_more {
         width: 12px;
         height: 12px;
-        background-image: url("../../assets/images/right.png");
+        background-image: url("../../assets/images/nav/right.png");
         background-size: 100% 100%;
         display: inline-block;
         vertical-align: middle;
@@ -54,10 +54,10 @@ ul {
     .list_title.on {
       color: #f85347;
       .icon_aboutUs {
-        background-image: url("../../assets/images/aboutUs_index.png");
+        background-image: url("../../assets/images/nav/aboutUs_index.png");
       }
       .icon_more {
-        background-image: url("../../assets/images/down.png");
+        background-image: url("../../assets/images/nav/down.png");
       }
     }
     &.on > .li_item {
@@ -73,10 +73,10 @@ ul {
     &.on > .list_title {
       color: #f85347;
       .icon_aboutUs {
-        background-image: url("../../assets/images/aboutUs_index.png");
+        background-image: url("../../assets/images/nav/aboutUs_index.png");
       }
       .icon_more {
-        background-image: url("../../assets/images/down.png");
+        background-image: url("../../assets/images/nav/down.png");
       }
     }
     .li_item {
@@ -115,25 +115,25 @@ ul {
     &:hover > .list_title {
       color: #f85347;
       .icon_aboutUs {
-        background-image: url("../../assets/images/aboutUs_index.png");
+        background-image: url("../../assets/images/nav/aboutUs_index.png");
       }
       .icon_business {
-        background-image: url("../../assets/images/business_index.png");
+        background-image: url("../../assets/images/nav/business_index.png");
       }
       .icon_operate {
-        background-image: url("../../assets/images/operate_index.png");
+        background-image: url("../../assets/images/nav/operate_index.png");
       }
       .icon_safe {
-        background-image: url("../../assets/images/safe_index.png");
+        background-image: url("../../assets/images/nav/safe_index.png");
       }
       .icon_law {
-        background-image: url("../../assets/images/law_index.png");
+        background-image: url("../../assets/images/nav/law_index.png");
       }
       .icon_platform {
-        background-image: url("../../assets/images/platform_index.png");
+        background-image: url("../../assets/images/nav/platform_index.png");
       }
       .icon_more {
-        background-image: url("../../assets/images/down.png");
+        background-image: url("../../assets/images/nav/down.png");
       }
     }
   }
@@ -149,7 +149,7 @@ ul {
         <i class="icon_more"></i>
       </div>
       <ul class="li_item">
-        <li v-for="(list, eq) in item.bar" :key="list" :class="{index: eq == Native.navIndex[1]}" @click="navChangeFunc(index, eq, list.path)">{{ list.title }}</li>
+        <li v-for="(list, eq) in item.bar" :key="eq" :class="{index: eq == Native.navIndex[1]}" @click="navChangeFunc(index, eq, list.path)">{{ list.title }}</li>
       </ul>
     </li>
   </ul>
@@ -175,6 +175,8 @@ export default {
       })
     }
   },
-  created () {}
+  created () {
+    this.navChange(this.$route.meta.index)
+  }
 }
 </script>

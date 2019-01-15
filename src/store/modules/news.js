@@ -16,7 +16,7 @@ const state = {
         },
         {
           title: '机构信息',
-          path: 'shareholders'
+          path: 'institutional'
         },
         {
           title: '团队介绍',
