@@ -39,28 +39,64 @@ const state = {
       title: '合规安全',
       icon: 'icon_safe',
       bar: [
-        '风险管理信息',
-        '银行存管信息',
-        '收费标准'
+        {
+          title: '风险管理信息',
+          path: 'shareholders'
+        },
+        {
+          title: '银行存管信息',
+          path: 'shareholders'
+        },
+        {
+          title: '收费标准',
+          path: 'feescale'
+        }
       ]
     }, {
       title: '法律法规',
       icon: 'icon_law',
       bar: [
-        '法律法规',
-        '禁止行为'
+        {
+          title: '法律法规',
+          path: 'shareholders'
+        },
+        {
+          title: '禁止行为',
+          path: 'shareholders'
+        }
       ]
     }, {
       title: '平台公告',
       icon: 'icon_platform',
       bar: [
-        '逾期公示',
-        '公开报告',
-        '通知公告',
-        '重大事项',
-        '备案信息',
-        '大事记',
-        '信披确认函'
+        {
+          title: '法律法规',
+          path: 'shareholders'
+        },
+        {
+          title: '逾期公示',
+          path: 'shareholders'
+        },
+        {
+          title: '公开报告',
+          path: 'shareholders'
+        },
+        {
+          title: '通知公告',
+          path: 'shareholders'
+        },
+        {
+          title: '重大事项',
+          path: 'shareholders'
+        },
+        {
+          title: '大事记',
+          path: 'shareholders'
+        },
+        {
+          title: '信披确认函',
+          path: 'shareholders'
+        }
       ]
     }]
   }

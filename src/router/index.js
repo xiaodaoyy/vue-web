@@ -4,6 +4,7 @@ import Router from 'vue-router'
  * 信息披露的路由
  */
 import RouteAboutUs from '@/router/news/aboutUs'
+import RouteSafe from '@/router/news/safe'
 Vue.use(Router)
 Vue.use(require('vue-wechat-title'))
 
@@ -16,7 +17,7 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index,
-      children: RouteAboutUs
+      children: RouteAboutUs.concat(RouteSafe)
     }
   ]
 })
