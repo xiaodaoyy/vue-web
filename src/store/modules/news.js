@@ -58,11 +58,11 @@ const state = {
       bar: [
         {
           title: '法律法规',
-          path: 'shareholders'
+          path: 'laws'
         },
         {
           title: '禁止行为',
-          path: 'shareholders'
+          path: 'forbidden'
         }
       ]
     }, {

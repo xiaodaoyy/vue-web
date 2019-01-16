@@ -1,0 +1,95 @@
+<style lang="less" scoped>
+  #Introduce{
+    width: 100%;
+  }
+  #container_title{
+    width: 100%;
+    padding: 0 0 60px 0;
+    background: #fff;
+    img{
+      width: 100%;
+    }
+  }
+  #container{
+    width: 100%;
+    background: #fff;
+    padding: 0 20px 60px;
+    box-sizing: border-box;
+    text-align: left;
+    .cont_main{
+      width: 100%;
+      ul{
+        font-size: 14px;
+        line-height: 32px;
+        .tit{
+          font-size: 16px;
+          color: #f85347;
+          padding: 22px 0 4px;
+        }
+        li:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  .contact{
+    width: 100;
+    background: #fff;
+    text-align: right;
+    padding: 20px;
+    margin: 30px 0 0 0;
+    img{
+    height: 93px;
+    }
+  }
+</style>
+
+<template>
+  <div id="Introduce">
+    <div id="container_title">
+      <img src="../../assets/images/navTitle/forbidden.png" alt="">
+    </div>
+    <div id="container">
+      <div class="cont_main">
+        <ul>
+          <li class="tit">网络借贷信息中介机构不得从事或者接受委托从事下列活动：</li>
+          <li>（一）为自身或变相为自身融资；</li>
+          <li>（二）直接或间接接受、归集出借人的资金；</li>
+          <li>（三）直接或变相向出借人提供担保或者承诺保本保息；</li>
+          <li>（四）自行或委托、授权第三方在互联网、固定电话、移动电话等电子渠道以外的物理场所进行宣传或推介融资项目；</li>
+          <li>（五）发放贷款，但法律法规另有规定的除外；</li>
+          <li>（六）将融资项目的期限进行拆分；</li>
+          <li>（七）自行发售理财等金融产品募集资金，代销银行理财、券商资管、基金、保险或信托产品等金融产品；</li>
+          <li>（八）开展类资产证券化业务或实现以打包资产、证券化资产、信托资产、基金份额等形式的债权转让行为；</li>
+          <li>（九）除法律法规和网络借贷有关监管规定允许外，与其他机构投资、代理销售、经纪等业务进行任何形式的混合、捆绑、代理；</li>
+          <li>（十）虚构、夸大融资项目的真实性、收益前景，隐瞒融资项目的瑕疵及风险，以歧义性语言或其他欺骗性手段等进行虚假片面宣传或促销等，捏造、散布虚假信息或不完整信息损害他人商业信誉，误导出借人或借款人；</li>
+          <li>（十一）向借款用途为投资股票、场外配资、期货合约、结构化产品及其他衍生品等高风险的融资提供信息中介服务；</li>
+          <li>（十二）从事股权众筹等业务；</li>
+          <li>（十三）法律法规、网络借贷有关监管规定禁止的其他活动。</li>
+          <li class="tit">借款人应当履行下列义务：</li>
+          <li>（一）提供真实、准确、完整的用户信息及融资信息；</li>
+          <li>（二）提供在所有网络借贷信息中介机构未偿还借款信息；</li>
+          <li>（三）保证融资项目真实、合法，并按照约定用途使用借贷资金，不得用于出借等其他目的；</li>
+          <li>（四）按照约定向出借人如实报告影响或可能影响出借人权益的重大信息；</li>
+          <li>（五）确保自身具有与借款金额相匹配的还款能力并按照合同约定还款；</li>
+          <li>（六）借贷合同及有关协议约定的其他义务。</li>
+          <li class="tit">借款人不得从事下列行为：</li>
+          <li>（一）通过故意变换身份、虚构融资项目、夸大融资项目收益前景等形式的欺诈借款；</li>
+          <li>（二）同时通过多个网络借贷信息中介机构，或者通过变换项目名称、对项目内容进行非实质性变更等方式，就同一融资项目进行重复融资；</li>
+          <li>（三）在网络借贷信息中介机构以外的公开场所发布同一融资项目的信息；</li>
+          <li>（四）已发现网络借贷信息中介机构提供的服务中含有本办法第十条所列内容，仍进行交易；</li>
+          <li>（五）法律法规和网络借贷有关监管规定禁止从事的其他活动。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact">
+        <img src="../../assets/images/contact.png" alt="">
+      </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Company'
+}
+</script>
