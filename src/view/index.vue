@@ -104,7 +104,7 @@
   }
   .container {
     width: 1200px;
-    margin: 30px auto;
+    margin: 30px auto 60px;
     display: flex;
     .cont_left {
       width: 200px;
