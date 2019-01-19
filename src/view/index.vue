@@ -103,6 +103,7 @@
     }
   }
   .container {
+    color: #323436;
     width: 1200px;
     margin: 30px auto 60px;
     display: flex;

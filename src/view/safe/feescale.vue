@@ -1,75 +1,51 @@
 <style lang="less" scoped>
-  #Introduce{
+#contain {
+  width: 100%;
+  background: #fff;
+  padding: 0 20px 60px;
+  box-sizing: border-box;
+  text-align: left;
+  .cont_main {
     width: 100%;
-  }
-  #container_title{
-    width: 100%;
-    padding: 0 0 60px 0;
-    background: #fff;
-    img{
-      width: 100%;
-    }
-  }
-  #container{
-    width: 100%;
-    background: #fff;
-    padding: 0 20px 60px;
-    box-sizing: border-box;
-    text-align: left;
-    .cont_main{
-      width: 100%;
-      ul{
-        border-bottom: #f2f2f2 solid 1px;
-        border-left: #f2f2f2 solid 1px;
-        li{
-          display: flex;
-          span{
-            display: block;
-            width: 130px;
-            text-align: center;
-            border-right: #f2f2f2 solid 1px;
-            border-top: #f2f2f2 solid 1px;
-            font-size: 16px;
-            line-height: 32px;
-            padding:22px 0;
-          }
-          .explain{
-            flex: 1;
-            text-align: left;
-            padding:22px 66px;
-          }
-          .pad {
-            padding:8px 66px;
-          }
+    ul {
+      border-bottom: #f2f2f2 solid 1px;
+      border-left: #f2f2f2 solid 1px;
+      li {
+        display: flex;
+        span {
+          display: block;
+          width: 130px;
+          text-align: center;
+          border-right: #f2f2f2 solid 1px;
+          border-top: #f2f2f2 solid 1px;
+          font-size: 16px;
+          line-height: 32px;
+          padding: 22px 0;
         }
-        li:first-child {
-          background:#fbfbfb;
-          .explain{
-            padding:8px 66px;
-            text-align: center;
-          }
+        .explain {
+          flex: 1;
+          text-align: left;
+          padding: 22px 66px;
+        }
+        .pad {
+          padding: 8px 66px;
+        }
+      }
+      li:first-child {
+        background: #fbfbfb;
+        .explain {
+          padding: 8px 66px;
+          text-align: center;
         }
       }
     }
   }
-  .contact{
-    width: 100;
-    background: #fff;
-    text-align: right;
-    padding: 20px;
-    margin: 30px 0 0 0;
-    img{
-    height: 93px;
-    }
-  }
+}
 </style>
 
 <template>
-  <div id="Introduce">
-    <div id="container_title">
-      <img src="../../assets/images/navTitle/feescale.png" alt="">
-    </div>
-    <div id="container">
+  <AboutTitle :url="url">
+    <div slot="main" id="contain">
       <div class="cont_main">
         <ul>
           <li>
@@ -100,14 +76,16 @@
         </ul>
       </div>
     </div>
-    <div class="contact">
-        <img src="../../assets/images/contact.png" alt="">
-      </div>
-  </div>
+  </AboutTitle>
 </template>
 
 <script>
 export default {
-  name: 'Company'
+  name: 'Company',
+  data () {
+    return {
+      url: require('@/assets/images/navTitle/feescale.png')
+    }
+  }
 }
 </script>

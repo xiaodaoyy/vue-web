@@ -28,7 +28,7 @@
       <img :src="url" alt>
     </div>
     <slot name="main"></slot>
-    <div class="contact">
+    <div class="contact" v-if="autograph">
       <img src="../assets/images/contact.png" alt>
     </div>
   </div>
@@ -41,6 +41,10 @@ export default {
     url: {
       type: String,
       default: ''
+    },
+    autograph: {
+      type: Boolean,
+      default: true
     }
   }
 }

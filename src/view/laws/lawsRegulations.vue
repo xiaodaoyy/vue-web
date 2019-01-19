@@ -1,15 +1,5 @@
 <style lang="less" scoped>
-#Introduce {
-  width: 100%;
-}
-#container_title {
-  width: 100%;
-  background: #fff;
-  img {
-    width: 100%;
-  }
-}
-#container {
+#contain {
   width: 100%;
   background: #fff;
   padding: 0 30px;
@@ -42,11 +32,8 @@
 </style>
 
 <template>
-  <div id="Introduce">
-    <div id="container_title">
-      <img :src="url" alt>
-    </div>
-    <div id="container">
+  <AboutTitle :url="url" :autograph="autograph">
+    <div slot="main" id="contain">
       <div class="cont_main">
         <ul>
           <li>
@@ -76,7 +63,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </AboutTitle>
 </template>
 
 <script>
@@ -84,6 +71,7 @@ export default {
   name: 'Company',
   data () {
     return {
+      autograph: false,
       url: require('@/assets/images/navTitle/law.png')
     }
   }
