@@ -5,6 +5,7 @@
 ## Build Setup
 
 ## 项目构造
+``` bash
 |- config
 |- node_modules
 |- src
