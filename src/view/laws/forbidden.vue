@@ -1,15 +1,4 @@
 <style lang="less" scoped>
-  #Introduce{
-    width: 100%;
-  }
-  #container_title{
-    width: 100%;
-    padding: 0 0 60px 0;
-    background: #fff;
-    img{
-      width: 100%;
-    }
-  }
   #container{
     width: 100%;
     background: #fff;
@@ -32,24 +21,11 @@
       }
     }
   }
-  .contact{
-    width: 100;
-    background: #fff;
-    text-align: right;
-    padding: 20px;
-    margin: 30px 0 0 0;
-    img{
-    height: 93px;
-    }
-  }
 </style>
 
 <template>
-  <div id="Introduce">
-    <div id="container_title">
-      <img src="../../assets/images/navTitle/forbidden.png" alt="">
-    </div>
-    <div id="container">
+  <AboutTitle :url="url">
+    <div slot="main" id="container">
       <div class="cont_main">
         <ul>
           <li class="tit">网络借贷信息中介机构不得从事或者接受委托从事下列活动：</li>
@@ -82,14 +58,16 @@
         </ul>
       </div>
     </div>
-    <div class="contact">
-        <img src="../../assets/images/contact.png" alt="">
-      </div>
-  </div>
+  </AboutTitle>
 </template>
 
 <script>
 export default {
-  name: 'Company'
+  name: 'Company',
+  data () {
+    return {
+      url: require('@/assets/images/navTitle/forbidden.png')
+    }
+  }
 }
 </script>
