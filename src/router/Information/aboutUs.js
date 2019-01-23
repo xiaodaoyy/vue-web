@@ -1,6 +1,6 @@
-const Company = resolve => require(['@/view/aboutUs/company'], resolve)
-const Shareholders = resolve => require(['@/view/aboutUs/shareholders'], resolve)
-const Institutional = resolve => require(['@/view/aboutUs/institutional'], resolve)
+const Company = resolve => require(['@/view/Information/aboutUs/company'], resolve)
+const Shareholders = resolve => require(['@/view/Information/aboutUs/shareholders'], resolve)
+const Institutional = resolve => require(['@/view/Information/aboutUs/institutional'], resolve)
 
 const RouteAboutUs = [
   {

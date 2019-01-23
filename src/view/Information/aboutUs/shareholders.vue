@@ -53,7 +53,7 @@
 <template>
   <AboutTitle :url="url">
     <div slot="main" id="container">
-      <img class="intro" src="../../assets/images/nav/shareholders_1.png" alt>
+      <img class="intro" src="../../../assets/images/nav/shareholders_1.png" alt>
       <ul>
         <li v-for="(item, index) in data" :key="index">
           <div class="li_left">

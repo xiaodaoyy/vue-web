@@ -1,5 +1,5 @@
-const LawsR = resolve => require(['@/view/laws/lawsRegulations'], resolve)
-const Forbidden = resolve => require(['@/view/laws/forbidden'], resolve)
+const LawsR = resolve => require(['@/view/Information/laws/lawsRegulations'], resolve)
+const Forbidden = resolve => require(['@/view/Information/laws/forbidden'], resolve)
 
 const RouteSafe = [
   {

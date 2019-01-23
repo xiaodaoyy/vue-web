@@ -1,4 +1,4 @@
-const FeeScale = resolve => require(['@/view/safe/feescale'], resolve)
+const FeeScale = resolve => require(['@/view/Information/safe/feescale'], resolve)
 
 const RouteSafe = [
   {
