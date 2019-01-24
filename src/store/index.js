@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import News from './modules/news'
+import Navs from './modules/Navs'
+import Information from './modules/Information'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
-    News
+    Navs,
+    Information
   },
   strict: true
 })

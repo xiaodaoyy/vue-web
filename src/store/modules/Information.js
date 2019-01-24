@@ -102,9 +102,6 @@ const state = {
   }
 }
 
-// getters
-const getters = {}
-
 // actions
 const actions = {
   navChange (context, obj) {
@@ -120,6 +117,9 @@ const mutations = {
     })
   }
 }
+
+// getters
+const getters = {}
 
 export default {
   state,

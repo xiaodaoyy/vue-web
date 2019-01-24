@@ -3,13 +3,13 @@ import Router from 'vue-router'
 /**
  * 信息披露的路由
  */
-import RouteAboutUs from '@/router/Information/aboutUs'
-import RouteSafe from '@/router/Information/safe'
-import RouteLaws from '@/router/Information/laws'
+import RouteInformation from '@/router/Information/index'
+
 Vue.use(Router)
 Vue.use(require('vue-wechat-title'))
 
-const Index = resolve => require(['@/view/index'], resolve)
+const Index = resolve => require(['@/view/Index'], resolve)
+const Information = resolve => require(['@/view/Information'], resolve)
 
 export default new Router({
   // mode: 'history',
@@ -19,10 +19,14 @@ export default new Router({
       name: 'Index',
       component: Index,
       meta: {
-        title: '信息披露',
-        index: [0, 0]
-      },
-      children: RouteAboutUs.concat(RouteSafe).concat(RouteLaws)
+        title: '首页'
+      }
+    },
+    {
+      path: '/information',
+      name: 'Information',
+      component: Information,
+      children: RouteInformation
     }
   ]
 })

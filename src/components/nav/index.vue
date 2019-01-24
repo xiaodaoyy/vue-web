@@ -161,7 +161,7 @@ export default {
   name: 'c-nav',
   computed: {
     Native () {
-      return this.$store.state.News.Nav
+      return this.$store.state.Information.Nav
     }
   },
   methods: {
