@@ -126,51 +126,144 @@
     }
   }
 }
-.notice{
+.notice {
   font-size: 0;
   width: 100%;
   height: 60px;
   line-height: 60px;
   background: #fff;
-  .main{
+  .main {
     width: 1200px;
     margin: 0 auto;
     text-align: left;
     display: flex;
-    .tips{
+    .tips {
       flex: 1;
       color: #323436;
       font-size: 14px;
-      i{
+      i {
         margin: 0 5px 0 0;
         &.iconcolor {
           color: #899ff0;
         }
       }
-      span{
+      span {
         color: #7a7a7e;
         font-size: 12px;
       }
     }
-    .more{
+    .more {
       color: #7a7a7e;
       font-size: 14px;
       cursor: pointer;
-      i{
+      i {
         margin: 0 0 0 2px;
       }
-      &:hover{
+      &:hover {
         color: #f85347;
       }
     }
   }
 }
-.recomment{
+.recomment {
+  font-size: 0;
   width: 100%;
   height: 295px;
   max-width: 1200px;
   margin: 30px auto;
   background: #fff;
+  display: flex;
+  .title {
+    width: 200px;
+    height: 295px;
+    text-align: left;
+    background: url("../../assets/images/index/home_contact_bg_hot.png") 100%
+      100%;
+    .name {
+      color: #fff;
+      font-size: 20px;
+      margin: 30px 0 15px 30px;
+    }
+    .intro {
+      color: #fff;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0 30px 0 30px;
+    }
+  }
+  .content {
+    flex: 1;
+    height: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    .box {
+      padding: 30px;
+      height: 147px;
+      box-sizing: border-box;
+      position: relative;
+      &:nth-child(1) {
+        border-bottom: 1px solid #f2f2f2;
+      }
+      .name {
+        color: #323436;
+        font-size: 18px;
+        margin: 0 0 20px 0;
+        span {
+          color: #7a7a73;
+          font-size: 12px;
+          margin: 0 0 0 10px;
+          .color {
+            color: #f85347;
+            margin: 0 0 0 5px;
+          }
+        }
+      }
+      .main {
+        width: 100%;
+        display: flex;
+        li {
+          margin: 0 60px;
+          &:nth-child(1) {
+            margin: 0 60px 0 0;
+          }
+          .value {
+            color: #f85347;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            &.c_black{
+              color: #323436;
+            }
+          }
+          .name {
+            color: #7a7a7e;
+            font-size: 12px;
+          }
+        }
+      }
+      .submit{
+        color: #f85347;
+        font-size: 12px;
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 2px;
+        box-sizing: border-box;
+        border: 1px solid #f85347;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+        margin: auto 0;
+        &:hover{
+          color: #fff;
+          background: #f85347;
+        }
+      }
+    }
+  }
 }
 </style>
 
@@ -295,7 +388,66 @@
         </div>
       </div>
       <div class="recomment">
-
+        <div class="title">
+          <div class="name">热门推荐</div>
+          <div class="intro">精选平台热门标,实现稳定收益</div>
+        </div>
+        <div class="content">
+          <div class="box">
+            <div class="name">
+              鑫鑫宝186001
+              <span>安全等级：
+                <span class="color">A</span>
+              </span>
+            </div>
+            <ul class="main">
+              <li>
+                <div class="value">8.02%</div>
+                <div class="name">历史年化利率</div>
+              </li>
+              <li>
+                <div class="value c_black">3个月</div>
+                <div class="name">投资期限</div>
+              </li>
+              <li>
+                <div class="value c_black">856,561元</div>
+                <div class="name">产品金额</div>
+              </li>
+              <li>
+                <div class="value c_black">100元</div>
+                <div class="name">起投金额</div>
+              </li>
+            </ul>
+            <div class="submit">立即投标</div>
+          </div>
+          <div class="box">
+            <div class="name">
+              鑫鑫宝186002
+              <span>安全等级：
+                <span class="color">A+</span>
+              </span>
+            </div>
+            <ul class="main">
+              <li>
+                <div class="value">8.02%</div>
+                <div class="name">历史年化利率</div>
+              </li>
+              <li>
+                <div class="value c_black">3个月</div>
+                <div class="name">投资期限</div>
+              </li>
+              <li>
+                <div class="value c_black">856,561元</div>
+                <div class="name">产品金额</div>
+              </li>
+              <li>
+                <div class="value c_black">100元</div>
+                <div class="name">起投金额</div>
+              </li>
+            </ul>
+            <div class="submit">立即投标</div>
+          </div>
+        </div>
       </div>
     </div>
   </Common>
