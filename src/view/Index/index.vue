@@ -1,270 +1,5 @@
 <style lang="less" scoped>
-.swiper {
-  font-size: 0;
-  width: 100%;
-  height: 350px;
-  background: #dc7878;
-  .tips {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-    position: relative;
-    .box {
-      width: 248px;
-      height: 250px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto 0;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.4);
-      .title {
-        color: #fff;
-        font-size: 16px;
-        letter-spacing: 1px;
-        margin: 45px 0 0 0;
-      }
-      .fee {
-        color: #fade6c;
-        font-size: 26px;
-        margin: 30px 0 50px 0;
-      }
-      .invest {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 16px;
-        letter-spacing: 2px;
-        cursor: pointer;
-        width: 120px;
-        height: 32px;
-        line-height: 32px;
-        border-radius: 6px;
-        margin: 0 auto;
-        background: #f85347;
-      }
-    }
-  }
-}
-.profit {
-  font-size: 0;
-  width: 100%;
-  border-bottom: 1px solid #f2f2f2;
-  background: #fff;
-  ul {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    li {
-      flex: 1;
-      padding: 0 0 0 35px;
-      text-align: left;
-      box-sizing: border-box;
-      .title {
-        color: #7a7a7a;
-        font-size: 14px;
-        margin: 20px 0 10px 0;
-      }
-      .value {
-        color: #f85347;
-        font-size: 20px;
-        margin: 0 0 20px 0;
-      }
-    }
-  }
-}
-.identify {
-  font-size: 100%;
-  width: 100%;
-  background: #fff;
-  ul {
-    width: 1200px;
-    margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
-    display: flex;
-    li {
-      flex: 1;
-      height: 120px;
-      text-align: left;
-      position: relative;
-      box-sizing: border-box;
-      img {
-        position: absolute;
-        top: 0;
-        left: 35px;
-        bottom: 0;
-        margin: auto 0;
-        &.size_1 {
-          width: 52px;
-          height: 54px;
-        }
-        &.size_2 {
-          width: 56px;
-          height: 56px;
-        }
-        &.size_3 {
-          width: 54px;
-          height: 49px;
-        }
-      }
-      .main {
-        margin: 30px 0 0 110px;
-        .title {
-          color: #323436;
-          font-size: 20px;
-          margin: 0 0 8px 0;
-        }
-        .intro {
-          color: #7a7a7a;
-          font-size: 14px;
-          span {
-            display: inline-block;
-            line-height: 18px;
-          }
-        }
-      }
-    }
-  }
-}
-.notice {
-  font-size: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background: #fff;
-  .main {
-    width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-    display: flex;
-    .tips {
-      flex: 1;
-      color: #323436;
-      font-size: 14px;
-      i {
-        margin: 0 5px 0 0;
-        &.iconcolor {
-          color: #899ff0;
-        }
-      }
-      span {
-        color: #7a7a7e;
-        font-size: 12px;
-      }
-    }
-    .more {
-      color: #7a7a7e;
-      font-size: 14px;
-      cursor: pointer;
-      i {
-        margin: 0 0 0 2px;
-      }
-      &:hover {
-        color: #f85347;
-      }
-    }
-  }
-}
-.recomment {
-  font-size: 0;
-  width: 100%;
-  height: 295px;
-  max-width: 1200px;
-  margin: 30px auto;
-  background: #fff;
-  display: flex;
-  .title {
-    width: 200px;
-    height: 295px;
-    text-align: left;
-    background: url("../../assets/images/index/home_contact_bg_hot.png") 100%
-      100%;
-    .name {
-      color: #fff;
-      font-size: 20px;
-      margin: 30px 0 15px 30px;
-    }
-    .intro {
-      color: #fff;
-      font-size: 14px;
-      line-height: 24px;
-      margin: 0 30px 0 30px;
-    }
-  }
-  .content {
-    flex: 1;
-    height: 100%;
-    text-align: left;
-    box-sizing: border-box;
-    .box {
-      padding: 30px;
-      height: 147px;
-      box-sizing: border-box;
-      position: relative;
-      &:nth-child(1) {
-        border-bottom: 1px solid #f2f2f2;
-      }
-      .name {
-        color: #323436;
-        font-size: 18px;
-        margin: 0 0 20px 0;
-        span {
-          color: #7a7a73;
-          font-size: 12px;
-          margin: 0 0 0 10px;
-          .color {
-            color: #f85347;
-            margin: 0 0 0 5px;
-          }
-        }
-      }
-      .main {
-        width: 100%;
-        display: flex;
-        li {
-          margin: 0 60px;
-          &:nth-child(1) {
-            margin: 0 60px 0 0;
-          }
-          .value {
-            color: #f85347;
-            font-size: 24px;
-            margin: 0 0 10px 0;
-            &.c_black{
-              color: #323436;
-            }
-          }
-          .name {
-            color: #7a7a7e;
-            font-size: 12px;
-          }
-        }
-      }
-      .submit{
-        color: #f85347;
-        font-size: 12px;
-        cursor: pointer;
-        width: 100px;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        border-radius: 2px;
-        box-sizing: border-box;
-        border: 1px solid #f85347;
-        background: #fff;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 30px;
-        margin: auto 0;
-        &:hover{
-          color: #fff;
-          background: #f85347;
-        }
-      }
-    }
-  }
-}
+@import "index.less";
 </style>
 
 <template>
@@ -396,7 +131,8 @@
           <div class="box">
             <div class="name">
               鑫鑫宝186001
-              <span>安全等级：
+              <span>
+                安全等级：
                 <span class="color">A</span>
               </span>
             </div>
@@ -423,7 +159,8 @@
           <div class="box">
             <div class="name">
               鑫鑫宝186002
-              <span>安全等级：
+              <span>
+                安全等级：
                 <span class="color">A+</span>
               </span>
             </div>
@@ -449,15 +186,37 @@
           </div>
         </div>
       </div>
+      <div class="hotSale">
+        <div class="title">
+          热销产品<span>分散投资，优质项目</span>
+        </div>
+        <div class="content">
+          <ul>
+            <li>
+              <div class="name">鑫鑫宝1810002</div>
+              <div class="price">产品金额：500,000元</div>
+              <div class="time">投资期限：30天</div>
+              <div class="progress">
+                <div class="main"></div>
+                <div class="tips">50%</div>
+                <div class="setCash">100云起投</div>
+              </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </Common>
 </template>
 
 <script>
 export default {
-  name: 'Index',
+  name: "Index",
   data () {
-    return {}
+    return {};
   }
-}
+};
 </script>
