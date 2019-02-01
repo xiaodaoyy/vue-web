@@ -189,9 +189,43 @@
       <div class="hotSale">
         <div class="title">
           热销产品<span>分散投资，优质项目</span>
+          <div class="more">
+            查看更多
+            <i class="iconfont">&#xe637;</i>
+          </div>
         </div>
         <div class="content">
           <ul>
+            <li class="on">
+              <div class="name">鑫鑫宝1810002</div>
+              <div class="price">产品金额：500,000元</div>
+              <div class="time">投资期限：30天</div>
+              <div class="progress">
+                <div class="main"></div>
+                <div class="tips">50%</div>
+                <div class="setCash">100云起投</div>
+              </div>
+              <div class="rate">
+                <div class="value">71.2%</div>
+                <div class="key">历史年华利率</div>
+              </div>
+              <div class="tender">立即投标</div>
+            </li>
+            <li class="on">
+              <div class="name">鑫鑫宝1810002</div>
+              <div class="price">产品金额：500,000元</div>
+              <div class="time">投资期限：30天</div>
+              <div class="progress">
+                <div class="main"></div>
+                <div class="tips">50%</div>
+                <div class="setCash">100云起投</div>
+              </div>
+              <div class="rate">
+                <div class="value">71.2%</div>
+                <div class="key">历史年华利率</div>
+              </div>
+              <div class="tender">立即投标</div>
+            </li>
             <li>
               <div class="name">鑫鑫宝1810002</div>
               <div class="price">产品金额：500,000元</div>
@@ -201,10 +235,56 @@
                 <div class="tips">50%</div>
                 <div class="setCash">100云起投</div>
               </div>
+              <div class="rate">
+                <div class="value">71.2%</div>
+                <div class="key">历史年华利率</div>
+              </div>
+              <div class="tender">还款中</div>
             </li>
+            <li>
+              <div class="name">鑫鑫宝1810002</div>
+              <div class="price">产品金额：500,000元</div>
+              <div class="time">投资期限：30天</div>
+              <div class="progress">
+                <div class="main"></div>
+                <div class="tips">50%</div>
+                <div class="setCash">100云起投</div>
+              </div>
+              <div class="rate">
+                <div class="value">71.2%</div>
+                <div class="key">历史年华利率</div>
+              </div>
+              <div class="tender">已还清</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hotSale">
+        <div class="title">
+          鑫鑫宝<span>分散投资，优质项目</span>
+          <div class="more">
+            查看更多
+            <i class="iconfont">&#xe637;</i>
+          </div>
+        </div>
+        <div class="table">
+          <ul class="title">
+            <li>年化利率</li>
+            <li>借款标题</li>
+            <li>产品金额</li>
+            <li>投资期限</li>
+            <li>投标进度</li>
+            <li>操作</li>
+          </ul>
+          <ul class="item">
+            <li>8.20%</li>
+            <li>鑫鑫宝1801293</li>
+            <li>150,000,000元</li>
+            <li>3个月</li>
             <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <div>立即投标</div>
+            </li>
           </ul>
         </div>
       </div>
@@ -214,9 +294,9 @@
 
 <script>
 export default {
-  name: "Index",
+  name: 'Index',
   data () {
-    return {};
+    return {}
   }
-};
+}
 </script>
