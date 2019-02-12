@@ -279,7 +279,7 @@
       font-size: 14px;
       margin: 0 0 0 15px;
     }
-    .more{
+    .more {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -311,30 +311,31 @@
         &:nth-child(1) {
           margin: 0 0 0 0;
         }
-        .name{
+        .name {
           color: #323436;
           font-size: 18px;
           margin: 30px 0 10px 20px;
         }
-        .price, .time{
+        .price,
+        .time {
           color: #7a7a7e;
           font-size: 14px;
           margin: 0 0 10px 20px;
         }
-        .progress{
+        .progress {
           width: 242px;
           height: 4px;
           margin: 40px auto;
           border-radius: 2px;
           background: #f2f2f2;
           position: relative;
-          .main{
+          .main {
             width: 50%;
             height: 100%;
             background: #f85347;
             border-radius: 2px;
           }
-          .tips{
+          .tips {
             color: #7a7a7e;
             font-size: 12px;
             position: absolute;
@@ -362,7 +363,7 @@
             font-size: 14px;
           }
         }
-        .tender{
+        .tender {
           color: #d0cfcf;
           font-size: 14px;
           width: 100%;
@@ -390,12 +391,12 @@
   }
   .table {
     width: 100%;
-    ul{
+    ul {
       width: 100%;
       margin: 0;
       padding: 0;
       display: flex;
-      li{
+      li {
         color: #7a7a7e;
         font-size: 16px;
         height: 60px;
@@ -414,7 +415,7 @@
         &:nth-last-child(2),
         &:nth-child(1),
         &:nth-child(3),
-        &:nth-child(5), {
+        &:nth-child(5) {
           width: 200px;
         }
         &:nth-child(2) {
@@ -429,8 +430,125 @@
       li {
         color: #323436;
         background: #fbfbfb;
+        .progress {
+          color: #323436;
+          font-size: 14px;
+          width: 140px;
+          height: 4px;
+          margin: 35px 0 0 0;
+          border-radius: 2px;
+          background: #f2f2f2;
+          position: relative;
+          .value {
+            display: inline-block;
+            line-height: 0;
+            position: absolute;
+            top: -10px;
+            left: 0;
+          }
+          .main {
+            width: 50%;
+            height: 100%;
+            background: #f85347;
+            border-radius: 2px;
+          }
+        }
         &:nth-child(1) {
           color: #f85347;
+        }
+        &:nth-last-child(1) {
+          color: #d0cfcf;
+        }
+      }
+      &:nth-child(2n-1) {
+        li {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+.news {
+  font-size: 0;
+  display: flex;
+  width: 100%;
+  height: 240px;
+  max-width: 1200px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  background: #fff;
+  .left {
+    width: 700px;
+    height: 100%;
+    border-right: 1px solid #f2f2f2;
+    .title {
+      color: #323436;
+      font-size: 16px;
+      padding: 30px 0 20px 30px;
+      text-align: left;
+    }
+    .main {
+      margin: 0 30px;
+      display: flex;
+      img {
+        width: 250px;
+        height: 150px;
+        text-align: left;
+      }
+      .intro {
+        flex: 1;
+        height: 150px;
+        overflow-y: scroll;
+        margin: 0 0 0 30px;
+        text-align: left;
+        ul {
+          li {
+            color: #323436;
+            margin: 0 0 10px 0;
+            .title {
+              margin: 0;
+              padding: 0;
+              font-size: 14px;
+              &:hover {
+                color: #f85347;
+                cursor: pointer;
+              }
+            }
+            .content {
+              display: none;
+              color: #7a7a7e;
+              font-size: 12px;
+              margin: 5px 0 0 0;
+              padding: 0 0 0 10px;
+              line-height: 22px;
+              text-indent: 2em;
+            }
+            &:hover > .content {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    .title {
+      color: #323436;
+      font-size: 16px;
+      padding: 30px 0 20px 30px;
+      text-align: left;
+    }
+    ul {
+      margin: 0 30px;
+      text-align: left;
+      li {
+        color: #323436;
+        font-size: 14px;
+        margin: 0 0 15px 0;
+        &:hover {
+          color: #f85347;
+          cursor: pointer;
         }
       }
     }

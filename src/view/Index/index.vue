@@ -187,8 +187,8 @@
         </div>
       </div>
       <div class="hotSale">
-        <div class="title">
-          热销产品<span>分散投资，优质项目</span>
+        <div class="title">热销产品
+          <span>分散投资，优质项目</span>
           <div class="more">
             查看更多
             <i class="iconfont">&#xe637;</i>
@@ -260,8 +260,8 @@
         </div>
       </div>
       <div class="hotSale">
-        <div class="title">
-          鑫鑫宝<span>分散投资，优质项目</span>
+        <div class="title">鑫鑫宝
+          <span>分散投资，优质项目</span>
           <div class="more">
             查看更多
             <i class="iconfont">&#xe637;</i>
@@ -281,10 +281,72 @@
             <li>鑫鑫宝1801293</li>
             <li>150,000,000元</li>
             <li>3个月</li>
-            <li></li>
             <li>
-              <div>立即投标</div>
+              <div class="progress">
+                <div class="value">50%</div>
+                <div class="main"></div>
+              </div>
             </li>
+            <li>
+              <div>已还清</div>
+            </li>
+          </ul>
+          <ul class="item">
+            <li>8.20%</li>
+            <li>鑫鑫宝1801293</li>
+            <li>150,000,000元</li>
+            <li>3个月</li>
+            <li>
+              <div class="progress">
+                <div class="value">50%</div>
+                <div class="main"></div>
+              </div>
+            </li>
+            <li>
+              <div>已还清</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="news">
+        <div class="left">
+          <div class="title">行业新闻</div>
+          <div class="main">
+            <img src="../../assets/images/intro.jpg" alt="">
+            <div class="intro">
+              <ul>
+                <li>
+                  <div class="title">该行业不适合该地区当前和未来的需要</div>
+                  <div class="content">该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要</div>
+                </li>
+                <li>
+                  <div class="title">该行业不适合该地区当前和未来的需要</div>
+                  <div class="content">该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要</div>
+                </li>
+                <li>
+                  <div class="title">该行业不适合该地区当前和未来的需要</div>
+                  <div class="content">该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要</div>
+                </li>
+                <li>
+                  <div class="title">该行业不适合该地区当前和未来的需要</div>
+                  <div class="content">该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要</div>
+                </li>
+                <li>
+                  <div class="title">该行业不适合该地区当前和未来的需要</div>
+                  <div class="content">该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要该行业不适合该地区当前和未来的需要</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">公告</div>
+          <ul>
+            <li>20180910快捷支付限额更新公告</li>
+            <li>20180911支付宝更新公告</li>
+            <li>20180912快捷支付限额更新公告</li>
+            <li>20180910快捷支付限额更新公告</li>
+            <li>20180911支付宝更新公告</li>
           </ul>
         </div>
       </div>
