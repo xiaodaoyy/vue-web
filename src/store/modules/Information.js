@@ -20,7 +20,7 @@ const state = {
         },
         {
           title: '团队介绍',
-          path: 'shareholders'
+          path: 'teamIntro'
         },
         {
           title: '联系我们',

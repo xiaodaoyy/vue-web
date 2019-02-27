@@ -1,6 +1,7 @@
 const Company = resolve => require(['@/view/Information/aboutUs/company'], resolve)
 const Shareholders = resolve => require(['@/view/Information/aboutUs/shareholders'], resolve)
 const Institutional = resolve => require(['@/view/Information/aboutUs/institutional'], resolve)
+const TeamIntro = resolve => require(['@/view/Information/aboutUs/teamIntro'], resolve)
 
 const RouteAboutUs = [
   {
@@ -28,6 +29,15 @@ const RouteAboutUs = [
     meta: {
       title: '机构信息',
       index: [0, 2]
+    }
+  },
+  {
+    path: 'teamIntro',
+    name: 'TeamIntro',
+    component: TeamIntro,
+    meta: {
+      title: '团队介绍',
+      index: [0, 3]
     }
   }
 ]
