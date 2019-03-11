@@ -24,7 +24,7 @@ const state = {
         },
         {
           title: '联系我们',
-          path: 'shareholders'
+          path: 'contactUs'
         }
       ]
     }, {

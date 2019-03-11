@@ -6,7 +6,7 @@
   .userList {
     width: 100%;
     background: #fff;
-    padding: 0 20px 10px;
+    padding: 0 20px 1px;
     box-sizing: border-box;
     .title {
       color: #323436;
@@ -68,6 +68,78 @@
       }
     }
   }
+  .content {
+    width: 100%;
+    background: #fff;
+    margin: 30px auto;
+    padding: 25px 40px 30px;
+    box-sizing:border-box;
+    .title {
+      color: #323436;
+      font-size: 20px;
+      margin: 0 0 30px 0;
+      position: relative;
+      &:after {
+        content: '';
+        width: 800px;
+        height: 2px;
+        background: #f2f2f2;
+        position: absolute;
+        top: 0;
+        left: 100px;
+        bottom: 0;
+        margin: auto 0;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .main {
+    width: 100%;
+    background: #fff;
+    margin: 30px auto;
+    padding: 25px 40px 30px;
+    box-sizing:border-box;
+    .title {
+      color: #323436;
+      font-size: 20px;
+      margin: 0 0 30px 0;
+      position: relative;
+      &:after {
+        content: '';
+        width: 720px;
+        height: 2px;
+        background: #f2f2f2;
+        position: absolute;
+        top: 0;
+        left: 180px;
+        bottom: 0;
+        margin: auto 0;
+      }
+    }
+    .chart {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      .left {
+        width: 50%;
+        height: 400px;
+        .contentLeftBox {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .right {
+        width: 50%;
+        height: 400px;
+        .contentRightBox {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 </style>
 
@@ -96,11 +168,32 @@
           </ul>
         </div>
       </div>
+      <div class="content">
+        <div class="title">
+          <span>组织架构</span>
+        </div>
+        <img src="../../../assets/images/teamBuild.png">
+      </div>
+      <div class="main">
+        <div class="title">
+          <span>公司从业人员概况</span>
+        </div>
+        <div class="chart">
+          <div class="left">
+            <div class="contentLeftBox" ref="contentLeftBox">
+            </div>
+          </div>
+          <div class="right">
+            <div class="contentRightBox" ref="contentRightBox"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </AboutTitle>
 </template>
 
 <script>
+import Highcharts from 'highcharts'
 export default {
   name: 'Company',
   data () {
@@ -148,7 +241,87 @@ export default {
           position: '监事',
           intro: '澳大利亚莫大什大学工商管理硕士，新声代崛起的商务品牌————飞购网的创始人兼总裁，曾认苏宁云商自由品牌事业部总经理、澳大利亚GOODBUY商业连锁公司运营总监，海信空调西南公司总经理、海信集团湖南营销中心总经理。二十多年知名大品牌公司的市场营销管理经验，练就其超强的品牌运作能力、丰富的渠道建设能力互联网创新意识'
         }
-      ]
+      ],
+      dataLeft: {
+        title: '年龄分布',
+        data: [{
+          color: '#f85347',
+          name: '25岁及以下：6(人)',
+          y: 6
+        }, {
+          color: '#ff8c3f',
+          name: '26 - 30岁：3(人)',
+          y: 3
+        }, {
+          color: '#fbe741',
+          name: '31 - 35岁：2(人)',
+          y: 2
+        }, {
+          color: '#37bcfa',
+          name: '35岁以上：3(人)',
+          y: 3
+        }]
+      },
+      dataRight: {
+        title: '学历分布',
+        data: [{
+          color: '#f85347',
+          name: '本科：9(人)',
+          y: 9
+        }, {
+          color: '#ff8c3f',
+          name: '大专：3(人)',
+          y: 3
+        }, {
+          color: '#fbe741',
+          name: '硕士：2(人)',
+          y: 2
+        }]
+      }
+    }
+  },
+  mounted () {
+    this.init(this.$refs.contentLeftBox, this.dataLeft)
+    this.init(this.$refs.contentRightBox, this.dataRight)
+  },
+  methods: {
+    init (id, data) {
+      Highcharts.chart(id, {
+        chart: {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+          type: 'pie'
+        },
+        title: {
+          text: data.title
+        },
+        tooltip: {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+              enabled: true,
+              // format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+              style: {
+                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+              }
+            }
+          }
+        },
+        credits: {
+          enabled: false
+        },
+        series: [{
+          size: '50%',
+          name: data.title,
+          colorByPoint: true,
+          data: data.data
+        }]
+      })
     }
   }
 }

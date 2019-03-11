@@ -25,7 +25,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url">
+  <AboutTitle :headerInfo="headerInfo">
     <div slot="main" id="container">
       <div class="cont_main">
         <img src="../../../assets/images/intro.png">
@@ -45,7 +45,10 @@ export default {
   name: 'Company',
   data () {
     return {
-      url: require('@/assets/images/navTitle/company.png')
+      headerInfo: {
+        color: '&#xe60d;',
+        name: '公司简介'
+      }
     }
   }
 }
