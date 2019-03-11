@@ -24,7 +24,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url">
+  <AboutTitle :headerInfo="headerInfo">
     <div slot="main" id="container">
       <div class="cont_main">
         <ul>
@@ -64,9 +64,12 @@
 <script>
 export default {
   name: 'Company',
-  data () {
-    return {
-      url: require('@/assets/images/navTitle/forbidden.png')
+  computed: {
+    headerInfo () {
+      return {
+        color: '&#xe611;',
+        name: '禁止行为'
+      }
     }
   }
 }

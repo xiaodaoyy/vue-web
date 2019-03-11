@@ -93,11 +93,11 @@
 </style>
 
 <template>
-  <div id="aboutTitleCont" v-if="headerInfo">
+  <div id="aboutTitleCont" v-if="headerInfo.color">
     <div id="container_title">
       <div class="intro">
         <div class="icon">
-          <i class="iconfont">{{ headerInfo.color }}</i>
+          <i class="iconfont" v-html="headerInfo.color"></i>
         </div>
         <div class="name">
           <span>{{ headerInfo.name}}</span>
@@ -116,9 +116,8 @@
 export default {
   name: 'about-us-title',
   props: {
-    headerInfo : {
-      type: Object,
-      default: {}
+    headerInfo: {
+      type: Object
     },
     autograph: {
       type: Boolean,

@@ -8,7 +8,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url">
+  <AboutTitle :headerInfo="headerInfo">
     <div slot="main" id="container">
       <TableStyle :Data="Data" />
     </div>
@@ -20,7 +20,6 @@ export default {
   name: 'Company',
   data () {
     return {
-      url: require('@/assets/images/navTitle/institutional.png'),
       Data: [
         {
           key: '公司全称',
@@ -90,6 +89,14 @@ export default {
           value: '互联网金融信息服务;投资咨询服务;投资管理服务;市场营销策划服务;策划创意服务'
         }
       ]
+    }
+  },
+  computed: {
+    headerInfo () {
+      return {
+        color: '&#xe60f;',
+        name: '机构信息'
+      }
     }
   }
 }

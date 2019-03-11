@@ -331,7 +331,7 @@ export default {
         path: '/',
         title: '首页'
       }, {
-        path: '/',
+        path: '/investZone',
         title: '投资专区'
       }, {
         path: '/',

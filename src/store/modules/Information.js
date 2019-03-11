@@ -70,10 +70,6 @@ const state = {
       icon: 'icon_platform',
       bar: [
         {
-          title: '法律法规',
-          path: 'shareholders'
-        },
-        {
           title: '逾期公示',
           path: 'shareholders'
         },

@@ -32,7 +32,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url">
+  <AboutTitle :headerInfo="headerInfo">
     <div slot="main" id="container">
       <ul class="intro">
         <li>
@@ -68,9 +68,12 @@
 <script>
 export default {
   name: 'contactUs',
-  data () {
-    return {
-      url: require('@/assets/images/navTitle/contactus.png')
+  computed: {
+    headerInfo () {
+      return {
+        color: '&#xe612;',
+        name: '联系我们'
+      }
     }
   }
 }

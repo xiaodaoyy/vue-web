@@ -32,7 +32,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url" :autograph="autograph">
+  <AboutTitle :headerInfo="headerInfo" :autograph="autograph">
     <div slot="main" id="contain">
       <div class="cont_main">
         <ul>
@@ -71,8 +71,15 @@ export default {
   name: 'Company',
   data () {
     return {
-      autograph: false,
-      url: require('@/assets/images/navTitle/law.png')
+      autograph: false
+    }
+  },
+  computed: {
+    headerInfo () {
+      return {
+        color: '&#xe60b;',
+        name: '法律法规'
+      }
     }
   }
 }

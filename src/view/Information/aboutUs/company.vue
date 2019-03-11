@@ -43,9 +43,9 @@
 <script>
 export default {
   name: 'Company',
-  data () {
-    return {
-      headerInfo: {
+  computed: {
+    headerInfo () {
+      return {
         color: '&#xe60d;',
         name: '公司简介'
       }

@@ -144,7 +144,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url">
+  <AboutTitle :headerInfo="headerInfo">
     <div slot="main" id="container">
       <div class="userList">
         <div class="title">
@@ -180,11 +180,10 @@
         </div>
         <div class="chart">
           <div class="left">
-            <div class="contentLeftBox" ref="contentLeftBox">
-            </div>
+            <div class="contentLeftBox" ref="contentLeftBox" />
           </div>
           <div class="right">
-            <div class="contentRightBox" ref="contentRightBox"></div>
+            <div class="contentRightBox" ref="contentRightBox" />
           </div>
         </div>
       </div>
@@ -198,7 +197,6 @@ export default {
   name: 'Company',
   data () {
     return {
-      url: require('@/assets/images/navTitle/teamintro.png'),
       userInfo: [
         {
           img: require('@/assets/images/team/user_zjh.png'),
@@ -284,6 +282,14 @@ export default {
     this.init(this.$refs.contentLeftBox, this.dataLeft)
     this.init(this.$refs.contentRightBox, this.dataRight)
   },
+  computed: {
+    headerInfo () {
+      return {
+        color: '&#xe608;',
+        name: '团队介绍'
+      }
+    }
+  },
   methods: {
     init (id, data) {
       Highcharts.chart(id, {
@@ -305,7 +311,6 @@ export default {
             cursor: 'pointer',
             dataLabels: {
               enabled: true,
-              // format: '<b>{point.name}</b>: {point.percentage:.1f} %',
               style: {
                 color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
               }

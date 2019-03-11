@@ -51,7 +51,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url">
+  <AboutTitle :headerInfo="headerInfo">
     <div slot="main" id="container">
       <img class="intro" src="../../../assets/images/nav/shareholders_1.png" alt>
       <ul>
@@ -75,8 +75,15 @@ export default {
   name: 'Company',
   data () {
     return {
-      url: require('@/assets/images/navTitle/shareholders.png'),
       data: []
+    }
+  },
+  computed: {
+    headerInfo () {
+      return {
+        color: '&#xe606;',
+        name: '股东介绍'
+      }
     }
   },
   mounted () {

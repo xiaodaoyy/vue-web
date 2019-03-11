@@ -1,0 +1,17 @@
+/* 改变page当前焦点css */
+.ivu-page-item-active {
+  background: #f85347;
+  border: none;
+}
+.ivu-page-item-active a {
+  color: #fff;
+}
+.ivu-page-item-active:hover > a {
+  color: #fff !important;
+}
+.ivu-page-item:hover {
+  border: 1px solid #f85347;
+}
+.ivu-page-item:hover > a {
+  color: #f85347;
+}

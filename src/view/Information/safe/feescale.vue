@@ -44,7 +44,7 @@
 </style>
 
 <template>
-  <AboutTitle :url="url">
+  <AboutTitle :headerInfo="headerInfo">
     <div slot="main" id="contain">
       <div class="cont_main">
         <ul>
@@ -82,9 +82,12 @@
 <script>
 export default {
   name: 'Company',
-  data () {
-    return {
-      url: require('@/assets/images/navTitle/feescale.png')
+  computed: {
+    headerInfo () {
+      return {
+        color: '&#xe607;',
+        name: '收费标准'
+      }
     }
   }
 }
